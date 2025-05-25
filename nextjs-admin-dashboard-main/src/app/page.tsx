@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { HousePriceEstimatorCard } from "./_components/house-price-estimator-card";
+import { HousePriceEstimatorCard } from "./(home)/_components/house-price-estimator-card";
 
 export default async function Home() {
 
