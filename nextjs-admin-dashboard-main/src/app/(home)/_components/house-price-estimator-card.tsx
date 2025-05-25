@@ -31,6 +31,7 @@ export function HousePriceEstimatorCard() {
         try {
             setIsSaving(true);
             const response = await axios.post('https://fakwbg0j0c.execute-api.us-west-2.amazonaws.com/dev/save', {
+                time_epochs: Date.now().toString(),
                 rooms: rooms.toString(),
                 square_feet: squareFeet.toString(),
                 price: output.toString(),
