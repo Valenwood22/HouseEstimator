@@ -33,9 +33,7 @@ To get started with HouseEstimator, follow these steps:
    npm run dev
    ```
 
-### Screenshots
-![HouseEstimator Demo](screenshots/demo.png)
-*(Add a screenshot or GIF to visually demonstrate the tool, e.g., using `ttygif` or `Asciinema` for terminal-based demos)*[](https://www.makeareadme.com/)
+   make sure the server is running on localhost:3000 or localhost3001 other ports will not be able to complete call to AWS.
 
 ## Contributing
 
