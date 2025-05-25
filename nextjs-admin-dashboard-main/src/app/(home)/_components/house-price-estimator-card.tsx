@@ -46,17 +46,17 @@ export function HousePriceEstimatorCard() {
 
     return (
         <div
-            className="col-span-12 rounded-[10px] bg-white py-6 shadow-1 dark:bg-gray-dark dark:shadow-card xl:col-span-6 max-w-lg mx-auto">
+            className="col-span-12 rounded-[10px] bg-white py-6 shadow-1 dark:bg-gray-dark dark:shadow-card xl:col-span-4 min-w-[250px] max-w-lg mx-auto">
             <h2 className="mb-5.5 px-7.5 text-body-2xlg font-bold text-dark dark:text-white">
                 House Price Estimator
                 <span className="block text-sm font-normal mt-1">Sklearn Regression Model</span>
             </h2>
 
-            <div className="px-7.5">
-                <div className="mb-4 flex flex-col gap-4">
-                    <div className="flex items-center gap-4">
+            <div className="px-7.5 w-full">
+                <div className="mb-4 flex flex-col gap-4 w-full">
+                    <div className="flex items-center gap-4 w-full">
                         <label htmlFor="rooms"
-                               className="text-sm font-medium text-dark dark:text-white whitespace-nowrap w-32">
+                               className="text-sm font-medium text-dark dark:text-white w-[128px]">
                             Number of Rooms
                         </label>
                         <input
@@ -68,12 +68,12 @@ export function HousePriceEstimatorCard() {
                                 setInputsChanged(true);
                             }}
                             placeholder="Number of rooms"
-                            className="flex-1 rounded-lg border border-stroke p-2 dark:border-stroke-dark dark:bg-gray-dark"
+                            className="w-[calc(100%-144px)] rounded-lg border border-stroke p-2 dark:border-stroke-dark dark:bg-gray-dark"
                         />
                     </div>
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 w-full">
                         <label htmlFor="squareFeet"
-                               className="text-sm font-medium text-dark dark:text-white whitespace-nowrap w-32">
+                               className="text-sm font-medium text-dark dark:text-white w-[128px]">
                             Square Feet
                         </label>
                         <input
@@ -85,7 +85,7 @@ export function HousePriceEstimatorCard() {
                                 setInputsChanged(true);
                             }}
                             placeholder="Square feet"
-                            className="flex-1 rounded-lg border border-stroke p-2 dark:border-stroke-dark dark:bg-gray-dark"
+                            className="w-[calc(100%-144px)] rounded-lg border border-stroke p-2 dark:border-stroke-dark dark:bg-gray-dark"
                         />
                     </div>
                 </div>
