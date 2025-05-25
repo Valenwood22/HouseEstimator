@@ -19,22 +19,19 @@ To get started with HouseEstimator, follow these steps:
    ```
 
 2. **Install Dependencies**:
-   Assuming the project uses Node.js or Python (modify as needed):
     - For Node.js:
       ```bash
       npm install
       ```
-    - For Python:
-      ```bash
-      pip install -r requirements.txt
-      ```
 
 3. **Requirements**:
     - Node.js >= 14.x (if JavaScript-based)
-    - Python >= 3.8 (if Python-based)
-    - Ensure you have [dependencies like `numpy`, `pandas`, or `express`] installed, if applicable.
 
 ## Usage
+
+   ```
+   npm run dev
+   ```
 
 ### Screenshots
 ![HouseEstimator Demo](screenshots/demo.png)
