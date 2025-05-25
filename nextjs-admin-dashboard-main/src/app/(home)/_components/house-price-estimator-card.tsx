@@ -11,7 +11,7 @@ export function HousePriceEstimatorCard() {
     const handleEstimation = async () => {
         try {
             setOutput("Estimation in progress...");
-            const response = await axios.post('https://af3kvjlkna.execute-api.us-west-2.amazonaws.com/dev/house-prediction', {
+            const response = await axios.post('http://35.95.129.233:8000/house-prediction', {
                 rooms: rooms,
                 square_feet: squareFeet,
             });
