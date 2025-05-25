@@ -96,7 +96,7 @@ export function HousePriceEstimatorCard() {
                     >
                         Estimate
                     </button>
-                    {output && Number(output) && !inputsChanged && (
+                    {output && Number(output) && !inputsChanged? (
                         <button
                             onClick={handleSave}
                             disabled={isSaving}
@@ -104,7 +104,7 @@ export function HousePriceEstimatorCard() {
                         >
                             {isSaving ? "..." : "Save"}
                         </button>
-                    )}
+                    ): null}
                 </div>
                 <div className="rounded-lg border border-stroke p-4 dark:border-stroke-dark">
                     <p className="text-dark dark:text-white">
